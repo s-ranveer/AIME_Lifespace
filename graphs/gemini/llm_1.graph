@@ -1,0 +1,9 @@
+X,Y,Weight
+challenging_days,lifespace_score,8
+challenging_days,non_routine_days,7
+lifespace_score,total_burden,8
+challenging_days,total_burden,9
+non_routine_days,total_burden,6
+community_type,lifespace_score,5
+educ_cg,total_burden,4
+sex_plwd,lifespace_score,3

@@ -1,0 +1,69 @@
+network unknown {
+}
+variable challenging_days {
+    type discrete [ 2 ] { 0, 1 };
+    property weight = None ;
+}
+variable community_type {
+    type discrete [ 2 ] { 0, 1 };
+    property weight = None ;
+}
+variable educ_cg {
+    type discrete [ 2 ] { 0, 1 };
+    property weight = None ;
+}
+variable educ_plwd {
+    type discrete [ 2 ] { 0, 1 };
+    property weight = None ;
+}
+variable lifespace_score {
+    type discrete [ 2 ] { 0, 1 };
+    property weight = None ;
+}
+variable non_routine_days {
+    type discrete [ 2 ] { 1, 0 };
+    property weight = None ;
+}
+variable sex_cg {
+    type discrete [ 2 ] { 1, 0 };
+    property weight = None ;
+}
+variable sex_plwd {
+    type discrete [ 2 ] { 0, 1 };
+    property weight = None ;
+}
+variable total_burden {
+    type discrete [ 2 ] { 0, 1 };
+    property weight = None ;
+}
+probability ( challenging_days ) {
+    table 0.5882352941176471, 0.4117647058823529 ;
+}
+probability ( community_type ) {
+    table 0.5294117647058824, 0.47058823529411764 ;
+}
+probability ( educ_cg ) {
+    table 0.4122807017543859, 0.587719298245614 ;
+}
+probability ( educ_plwd ) {
+    table 0.5882352941176471, 0.4117647058823529 ;
+}
+probability ( lifespace_score ) {
+    table 0.587719298245614, 0.4122807017543859 ;
+}
+probability ( non_routine_days ) {
+    table 0.5294117647058824, 0.47058823529411764 ;
+}
+probability ( sex_cg ) {
+    table 0.7647058823529411, 0.23529411764705882 ;
+}
+probability ( sex_plwd ) {
+    table 0.7058823529411765, 0.29411764705882354 ;
+}
+probability ( total_burden | educ_cg, lifespace_score ) {
+    ( 0, 0 ) 0.6652892561983471, 0.33471074380165283;
+    ( 0, 1 ) 0.9968944099378881, 0.003105590062111801;
+    ( 1, 0 ) 0.5711743772241993, 0.4288256227758007;
+    ( 1, 1 ) 0.004132231404958678, 0.9958677685950412;
+
+}

@@ -1,0 +1,16 @@
+X,Y,Weight
+educ_plwd,lifespace_score,6
+sex_plwd,lifespace_score,4
+community_type,lifespace_score,7
+challenging_days,lifespace_score,8
+non_routine_days,lifespace_score,5
+educ_plwd,challenging_days,5
+sex_plwd,challenging_days,3
+community_type,challenging_days,4
+educ_cg,total_burden,6
+sex_cg,total_burden,4
+challenging_days,total_burden,9
+lifespace_score,total_burden,7
+non_routine_days,total_burden,6
+community_type,total_burden,5
+non_routine_days,challenging_days,7
