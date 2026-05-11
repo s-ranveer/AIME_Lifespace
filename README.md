@@ -1,5 +1,5 @@
 ## Life-Space Assessment Causal Modelling
-This repository contains the code for the manuscript **Causal Models with Tiny Data: The Case of Rural People Living with Dementia**, which has been submitted to AIME 2026.
+This repository contains the code for the manuscript **Causal Models with Tiny Data: The Case of Rural People Living with Dementia**, accepted at **AIME 2026**
 
 ### Project Description
 1. The repository contains Python scripts used for processing the LLM graphs, refining them using data, plotting them, computing their BIC scores, and computing their CI independencies.
